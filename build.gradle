@@ -31,12 +31,11 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.5.1'
 }
 
+test {
+    useJUnitPlatform()
+}
 application {
     // Define the main class for the application.
     mainClassName = 'com.tw.fp.App'
 }
 
-test {
-    // Use junit platform for unit tests
-    useJUnitPlatform()
-}
